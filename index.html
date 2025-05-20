@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-cs-entrance">
+        <li class="text">CS Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-laundry-hallway">
+        <li class="text">laundry hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-laundry">
+        <li class="text">Laundry</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-mailroom">
+        <li class="text">mailroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-front-desk">
+        <li class="text">Front Desk</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-equipment-desk">
+        <li class="text">Equipment Desk</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-equipment-room">
+        <li class="text">Equipment Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-lobby">
+        <li class="text">Lobby</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-turnstile">
+        <li class="text">turnstile</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-client-side-equipment">
+        <li class="text">client side equipment</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-hallway-first-elevator">
+        <li class="text">hallway first elevator</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-inside-1st-elevator">
+        <li class="text">inside 1st elevator</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-first-elevator-second-floor">
+        <li class="text">first elevator second floor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-lobby-staircase">
+        <li class="text">lobby staircase</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-lobby-staircase2stop">
+        <li class="text">lobby staircase2stop</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-lobby-staircase3">
+        <li class="text">lobby staircase3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-past-the-first-elevator">
+        <li class="text">past the first elevator</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-pool-door-near-cs">
+        <li class="text">pool door near cs</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-stair-1-floor-1">
+        <li class="text">stair 1 floor 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-outside-women-changeroom-door">
+        <li class="text">outside women changeroom door</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-squash-walkway1">
+        <li class="text">squash walkway1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-squash-walkway2">
+        <li class="text">squash walkway2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-squash-walkway3">
+        <li class="text">squash walkway3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-men-changeroom-door">
+        <li class="text">men changeroom door</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-stair-4-floor-1">
+        <li class="text">stair 4 floor 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-stair-4-floor-basement-near-studio1">
+        <li class="text">stair 4 floor basement near studio1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-studio-1">
+        <li class="text">studio 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-spin-studio-outside">
+        <li class="text">spin studio outside</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-spin-studio">
+        <li class="text">spin studio</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-outside-squash-3-and-studio-2">
+        <li class="text">outside squash 3 and studio 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-studio-2">
+        <li class="text">studio 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-table-tennis-court">
+        <li class="text">table tennis court</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-squash-court-4-outside">
+        <li class="text">squash court 4 outside</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-squash-court-4">
+        <li class="text">squash court 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-hallway-to-studio-4-and-hpc-1">
+        <li class="text">hallway to studio 4 and hpc 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-squash-court-7">
+        <li class="text">squash court 7?</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-squash-court-6">
+        <li class="text">squash court 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-squash-court-7-outside-and-left-staircase">
+        <li class="text">squash court 7 outside and left staircase</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-studio-3-outside">
+        <li class="text">studio 3 outside</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-studio-3">
+        <li class="text">studio 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-left-staircase-near-squash-court-inside">
+        <li class="text">left staircase near squash court inside</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-left-staircase-between-basement-and-cs-floor">
+        <li class="text">left staircase between basement and cs floor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-stair-3-floor-cs-or-floor-1">
+        <li class="text">stair 3 floor cs or floor 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-staircase3-left-above-floor-1-or-cs">
+        <li class="text">staircase3 left above floor 1 or cs</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-stair-3-floor-2-near-fitness-centre">
+        <li class="text">Stair 3 floor 2 near fitness centre</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-hallway-to-studio-4-and-hpc-2">
+        <li class="text">hallway to studio 4 and hpc 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-studio-4a-outside">
+        <li class="text">studio 4A outside</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-studio-4a-left">
+        <li class="text">studio 4A left</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-studio-4b-right">
+        <li class="text">studio 4b right</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-studio-4b-and-hpc">
+        <li class="text">studio 4b and hpc</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-hpc">
+        <li class="text">hpc</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-hpc-center">
+        <li class="text">hpc center</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-hallway-to-studio-4-and-hpc-to-teamsroom">
+        <li class="text">hallway to studio 4 and hpc to teamsroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-teamroom-hallway">
+        <li class="text">teamroom hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-teamroom-hallway-2">
+        <li class="text">teamroom hallway 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-teamroom-hallway-3-team-room-4">
+        <li class="text">teamroom hallway 3 team room 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-teamroom-hallway-4-near-maglock">
+        <li class="text">teamroom hallway 4 near maglock</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-teamroom-hallway-betweem-stair-2-floor-b-and-elevator">
+        <li class="text">teamroom hallway betweem stair 2 floor b and elevator</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-elevator-basement">
+        <li class="text">elevator basement</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-inside-second-elevator-floor-1">
+        <li class="text">inside second elevator floor 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-near-elevator-loading-dock-and-family-changeroom">
+        <li class="text">near elevator loading dock and family changeroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-near-loading-dock-">
+        <li class="text">near loading dock </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-loading-dock-doors-maglock">
+        <li class="text">loading dock doors maglock</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-family-changeroom-and-visint-team-changeroom-2">
+        <li class="text">family changeroom and visint team changeroom 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-family-changeroom-and-visint-team-changeroom-3">
+        <li class="text">family changeroom and visint team changeroom 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-end-of-family-changeroom-and-visiting-team-changeroom-near-the-left-side-of-swimming-pool">
+        <li class="text">end of family changeroom and visiting team changeroom near the left side of swimming pool</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-near-aquatics-office-and-mens-pool-access">
+        <li class="text">near aquatics office and mens pool access</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-stair-2-floor-2-near-student-lounge">
+        <li class="text">stair 2 floor 2 near student lounge</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-main-maglock-and-near-second-elevator-and-near-student-lounge">
+        <li class="text">main maglock and near second elevator and near student lounge</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-hallway-to-student-lounge">
+        <li class="text">hallway to student lounge</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-student-lounge">
+        <li class="text">student lounge</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-main-gym-outside-door">
+        <li class="text">main gym outside door</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-main-gym-inside-hallway">
+        <li class="text">main gym inside hallway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-main-gym-entrance-center-bottom">
+        <li class="text">main gym entrance center bottom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74-main-gym-left-bottom">
+        <li class="text">main gym left bottom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-main-gym-center-left">
+        <li class="text">main gym center left</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-main-gym-center-center">
+        <li class="text">main gym center center</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-main-gym-top-right">
+        <li class="text">main gym top right</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78-stair-1-floor-2-men-washroom-second-floor">
+        <li class="text">stair 1 floor 2 men washroom second floor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79-stairs-to-upper-gym">
+        <li class="text">stairs to upper gym</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80-stairs-to-upper-gym-near-men-washroom">
+        <li class="text">stairs to upper gym near men washroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81-hallway-to-vending-machine-near-the-men-washroom">
+        <li class="text">hallway to vending machine near the men washroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82-hallway-to-fitness-centre1">
+        <li class="text">hallway to fitness centre1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83-fitness-centre-hallway-2">
+        <li class="text">fitness centre hallway 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84-near-main-maglock-and-near-fitness-centre">
+        <li class="text">near main maglock and near fitness centre</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85-hallway-to-injury-clinic-and-fitness-centre">
+        <li class="text">hallway to injury clinic and fitness centre</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86-hallway-to-injury-clinic">
+        <li class="text">hallway to injury clinic</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87-hallway-to-injury-clinic-2">
+        <li class="text">hallway to injury clinic 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88-hallway-to-event-office-and-kelly-office">
+        <li class="text">hallway to event office and kelly office</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89-injury-clinic-office-and-maglock">
+        <li class="text">injury clinic office and maglock</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="90-fitness-centre">
+        <li class="text">fitness centre</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="91-fieldhouse-outside">
+        <li class="text">fieldhouse outside</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="92-fieldhouse-court-1">
+        <li class="text">fieldhouse court 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="93-fieldhouse-court-1-and-2">
+        <li class="text">fieldhouse court 1 and 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="94-fieldhouse-court-2">
+        <li class="text">fieldhouse court 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="95-upper-gym-near-elevator">
+        <li class="text">upper gym near elevator</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="96-staff-lounge">
+        <li class="text">staff lounge</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="97-upper-gym-and-room-316-outside">
+        <li class="text">upper gym and room 316 outside</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="98-room-316">
+        <li class="text">room 316</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="99-upper-gym-inside">
+        <li class="text">upper gym inside</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="100-upper-gym-net-password-keypad">
+        <li class="text">upper gym net password keypad</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="101-stair-2-floor-3-near-elevator-2">
+        <li class="text">stair 2 floor 3 near elevator 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="102-studio-6">
+        <li class="text">studio 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="103-stair-2-floor-4-elevator-2-near-studio-6">
+        <li class="text">stair 2 floor 4 elevator 2 near studio 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="104-outside-near-key-and-gator-location">
+        <li class="text">outside near key and gator location</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="105-outside-and-opening-tait-keys">
+        <li class="text">outside and opening tait keys</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="106-pool-door-near-cs-inside-pool">
+        <li class="text">pool door near cs inside pool</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="107-pool-center">
+        <li class="text">pool center</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="108-pool-left-side-near-aquatics-office">
+        <li class="text">pool left side near aquatics office</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="109-outside-aquatics-office-and-gender-neutral-changeroom-pool">
+        <li class="text">outside aquatics office and gender neutral changeroom pool</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
